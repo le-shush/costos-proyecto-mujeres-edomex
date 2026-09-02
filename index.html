@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Plan de trabajo y calendario de pagos · Campaña AVGF Estado de México</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,300..800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16160F;--paper:#F1F1EC;--card:#FFF;--lime:#B8C61B;--violet:#6D28D9;
+ --red:#C81E33;--red-soft:#FBE9EC;--grey:#6E6E66;--line:#D9D9D2;--line-soft:#EAEAE3;
+ --f-nuc:#4A4A42;--f-tra:#6D28D9;--f-mac:#0F766E;--f-cru:#8A9410;--f-imp:#B45309;--f-sem:#B8C61B}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Archivo',system-ui,-apple-system,sans-serif;
+ font-size:15px;line-height:1.55;font-variant-numeric:tabular-nums}
+body.locked{overflow:hidden}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px 90px}
+h1,h2,h3{margin:0;font-weight:700;font-variation-settings:'wdth' 110;line-height:1.12;letter-spacing:-.015em}
+h1{font-size:clamp(27px,4.4vw,46px);font-weight:800}
+h2{font-size:clamp(20px,2.4vw,26px)}
+h3{font-size:16px;font-variation-settings:'wdth' 100}
+h4{margin:0 0 6px;font-size:12px;font-weight:700;color:var(--grey);letter-spacing:.02em}
+p{margin:0 0 12px}
+.banner{background:var(--violet);color:#fff;padding:11px 26px;font-size:13px;font-weight:600;text-align:center}
+.mast{padding:38px 0 24px;border-bottom:2px solid var(--ink)}
+.kicker{font-size:12.5px;color:var(--grey);font-weight:600;margin-bottom:12px}
+.mast .sub{margin-top:14px;font-size:16px;color:var(--grey);max-width:64ch}
+.facts{display:flex;flex-wrap:wrap;margin-top:24px;border-top:1px solid var(--line)}
+.fact{flex:1 1 150px;padding:14px 18px 14px 0;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact b{display:block;font-size:20px;font-weight:700}
+.fact span{font-size:12.5px;color:var(--grey)}
+.hero{margin-top:32px;background:var(--ink);color:#F6F6F0;padding:28px 30px;border-radius:3px}
+.hero .stamp{display:inline-block;background:var(--lime);color:var(--ink);font-size:12px;font-weight:700;padding:3px 10px;border-radius:2px}
+.hero .big{font-size:clamp(22px,3vw,34px);font-weight:800;font-variation-settings:'wdth' 114;line-height:1.14;margin:11px 0 13px;max-width:30ch}
+.hero p{color:rgba(255,255,255,.84);max-width:74ch;margin-bottom:9px}
+.hero p:last-child{margin-bottom:0}
+section{margin-top:50px}
+.shead{display:flex;align-items:baseline;gap:13px;border-bottom:1px solid var(--ink);padding-bottom:10px;margin-bottom:20px;flex-wrap:wrap}
+.shead .n{font-size:12.5px;font-weight:700;color:var(--violet)}
+.shead .note{font-size:13px;color:var(--grey);margin-left:auto}
+.ctrl{background:var(--card);padding:17px 22px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;border:1px solid var(--line);margin-bottom:22px}
+.ctrl label{font-size:13.5px;font-weight:600}
+.ctrl input[type=date]{font:inherit;font-size:15px;padding:8px 12px;border:1px solid var(--ink);background:#fff;border-radius:2px}
+.ctrl .hint{font-size:13px;color:var(--grey);max-width:44ch}
+.wins{display:grid;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));gap:1px;background:var(--line);margin-bottom:22px}
+.win{background:var(--card);padding:20px;overflow:hidden}
+.win .top{height:4px;margin:-20px -20px 15px}
+.win .lbl{font-size:11.5px;font-weight:700;color:var(--grey);margin-bottom:6px}
+.win .amt{font-size:23px;font-weight:800;font-variation-settings:'wdth' 108;line-height:1.05}
+.win .cur{font-size:12.5px;color:var(--grey);font-weight:600}
+.win .when{margin-top:10px;font-size:13.5px;font-weight:700}
+.win .why{margin-top:5px;font-size:12.5px;color:var(--grey);line-height:1.45}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:14px}
+th{text-align:left;font-weight:700;font-size:12.5px;color:var(--grey);padding:11px 12px;border-bottom:1px solid var(--ink);white-space:nowrap}
+td{padding:11px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;white-space:nowrap}
+td.num{font-weight:600}
+td.d{white-space:nowrap;font-weight:600}
+tr.tot td{background:#F5F5EF;font-weight:800;border-top:1.5px solid var(--ink)}
+.scroll{overflow-x:auto;border:1px solid var(--line)}
+.scroll table{min-width:660px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:8px}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px;background:#EFEFE8;color:var(--grey)}
+.pill.hard{background:var(--red-soft);color:var(--red)}
+.gwrap{border:1px solid var(--line);background:var(--card);overflow:hidden}
+.glegend{display:flex;gap:18px;flex-wrap:wrap;padding:13px 18px;border-bottom:1px solid var(--line-soft);font-size:12.5px;color:var(--grey)}
+.glegend i{display:inline-block;width:20px;height:9px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.glegend .tip{margin-left:auto;color:var(--violet);font-weight:600}
+.gscroll{overflow-x:auto}
+.gantt{position:relative;min-width:100%}
+.grow{display:flex;border-bottom:1px solid var(--line-soft);min-height:29px}
+.grow.phase{background:#F7F7F1;border-bottom:1px solid var(--line)}
+.grow.hot{background:#FBFAF2}
+.grow.hot .glabel{background:#FBFAF2}
+.glabel{flex:0 0 300px;padding:6px 12px 6px 16px;font-size:12.5px;position:sticky;left:0;background:var(--card);z-index:3;border-right:1px solid var(--line);display:flex;align-items:center;gap:8px}
+.grow.phase .glabel{background:#F7F7F1;font-weight:700;font-size:13px;font-variation-settings:'wdth' 106}
+.glabel .code{color:var(--grey);font-size:10.5px;font-weight:700;flex:0 0 22px}
+.glabel .who{margin-left:auto;font-size:10px;font-weight:700;color:#fff;padding:1px 6px;border-radius:2px;flex:0 0 auto}
+.gtrack{position:relative;flex:1 0 auto;min-height:29px}
+.bar{position:absolute;top:50%;transform:translateY(-50%);height:13px;border-radius:2px;cursor:pointer;border:0;padding:0;transition:height .12s,box-shadow .12s}
+.bar:hover,.bar:focus-visible{height:19px;box-shadow:0 0 0 2px var(--card),0 0 0 4px var(--ink);outline:none;z-index:5}
+.bar.dash{background:#fff!important;border:1.5px dashed var(--f-sem)}
+.bar .lbl{position:absolute;left:calc(100% + 7px);top:50%;transform:translateY(-50%);font-size:10.5px;color:var(--grey);white-space:nowrap;pointer-events:none}
+.gaxis{display:flex;border-bottom:1px solid var(--ink);position:sticky;top:0;background:var(--card);z-index:4}
+.gaxis .glabel{font-weight:700;font-size:12.5px;color:var(--grey)}
+.gmonth{position:absolute;top:0;font-size:11.5px;font-weight:700;color:var(--grey);padding:8px 0 0 5px;border-left:1px solid var(--line);height:100%}
+.axisrow{height:32px}
+.vpay{position:absolute;top:0;bottom:0;width:0;border-left:2px solid var(--violet);z-index:2}
+.vhard{position:absolute;top:0;bottom:0;width:0;border-left:1.5px dashed var(--red);z-index:2}
+.vflag{position:absolute;left:3px;font-size:10px;font-weight:700;white-space:nowrap;background:var(--card);padding:0 3px}
+.gplane{position:absolute;inset:0;pointer-events:none;z-index:2;margin-left:300px}
+#tip{position:fixed;z-index:60;pointer-events:none;opacity:0;transition:opacity .1s;background:var(--ink);color:#F6F6F0;
+ padding:13px 15px;border-radius:3px;max-width:330px;box-shadow:0 8px 28px rgba(0,0,0,.28);font-size:13px;line-height:1.45}
+#tip.on{opacity:1}
+#tip .tt{font-weight:700;font-size:14px;margin-bottom:7px;font-variation-settings:'wdth' 106}
+#tip .tr{display:flex;gap:10px;margin-top:3px}
+#tip .tr span:first-child{color:rgba(255,255,255,.55);flex:0 0 78px;font-size:12px}
+#tip .tr span:last-child{font-weight:600}
+#tip .tsum{margin-top:9px;padding-top:9px;border-top:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.82);font-size:12.5px}
+#tip .tflag{margin-top:9px;background:rgba(255,255,255,.12);padding:6px 9px;border-radius:2px;font-size:12px;border-left:2px solid #FF8A9B}
+#tip .tcta{margin-top:9px;color:var(--lime);font-size:11.5px;font-weight:700}
+#ov{position:fixed;inset:0;background:rgba(20,20,15,.55);z-index:70;display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto}
+#ov.on{display:flex}
+.modal{background:var(--card);max-width:660px;width:100%;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,.3);position:relative;animation:pop .16s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.modal{animation:none}}
+.mhead{padding:26px 30px 20px;border-bottom:1px solid var(--line)}
+.mhead .eyebrow{font-size:12.5px;color:var(--grey);font-weight:600;margin-bottom:8px}
+.mhead h3{font-size:22px;font-weight:800;font-variation-settings:'wdth' 110;max-width:27ch;line-height:1.15}
+.mtags{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
+.mclose{position:absolute;top:18px;right:18px;background:#EFEFE8;border:0;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:19px;line-height:1;color:var(--ink)}
+.mclose:hover{background:var(--ink);color:#fff}
+.mclose:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
+.mbody{padding:24px 30px 30px}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(122px,1fr));gap:1px;background:var(--line);margin-bottom:22px}
+.mcell{background:var(--card);padding:12px 14px}
+.mcell span{display:block;font-size:11.5px;color:var(--grey);font-weight:600;margin-bottom:2px}
+.mcell b{font-size:14px;font-weight:700}
+.mblock{margin-bottom:20px}
+.mblock p{font-size:14.5px;color:#33332C;margin-bottom:0;max-width:62ch}
+.mlist{margin:0;padding-left:18px;font-size:14px;color:#33332C}
+.mlist li{margin-bottom:5px}
+.alert{background:var(--red-soft);border-left:3px solid var(--red);padding:14px 16px;font-size:14px;color:#33332C;margin-bottom:20px}
+.alert b{color:var(--red)}
+.info{background:#fff;border:1px solid var(--line);border-left:3px solid var(--violet);padding:15px 17px;font-size:14px;color:#33332C;margin-top:20px}
+.info b{color:var(--violet)}
+.notes{background:var(--card);border:1px solid var(--line);padding:22px 26px}
+.notes ol{margin:0;padding-left:20px;font-size:14px;color:#33332C}
+.notes li{margin-bottom:10px}
+footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--grey);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media print{
+ @page{size:A4 landscape;margin:11mm}
+ body{background:#fff;font-size:9.5pt}
+ .wrap{max-width:none;padding:0}
+ .ctrl,.banner,#tip,#ov{display:none!important}
+ .hero{background:#fff!important;color:var(--ink)!important;border:1.5px solid var(--ink);padding:15px 17px}
+ .hero p{color:#33332C!important}
+ .hero .stamp{background:var(--ink);color:#fff}
+ section{margin-top:18px;page-break-inside:avoid}
+ .gwrap,.scroll,.wins,.notes{page-break-inside:avoid}
+ .gscroll{overflow:visible}
+ h1{font-size:23pt}h2{font-size:14pt}
+ .mast{padding-top:0}
+}
+</style>
+</head>
+<body>
+<div class="banner">Documento confidencial · preparado para la coordinación general de Núcleo</div>
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">Campaña de difusión contra la violencia de género · Estado de México · Núcleo, coordinación general</div>
+  <h1>Plan de trabajo y calendario de pagos</h1>
+  <div class="sub">Todo el programa en una vista: qué hace cada frente, cuándo entrega y en qué fecha cobra. Cada contrato se finiquita al terminar su participación, no al cierre del programa.</div>
+  <div class="facts">
+    <div class="fact"><b id="fTotal">—</b><span>Costo total del programa</span></div>
+    <div class="fact"><b id="fAnt">—</b><span>Anticipos al arranque</span></div>
+    <div class="fact"><b id="fSal">—</b><span>Finiquitos por entrega</span></div>
+    <div class="fact"><b id="fVent">—</b><span>Ventanas de pago</span></div>
+    <div class="fact"><b id="fTasks">—</b><span>Actividades del plan</span></div>
+  </div>
+</header>
+
+<div class="hero">
+  <span class="stamp">Lo primero que hay que saber</span>
+  <div class="big" id="heroBig">—</div>
+  <p id="heroText"></p>
+  <p id="heroText2"></p>
+</div>
+
+<section>
+  <div class="shead"><span class="n">01</span><h2>Ventanas de pago</h2><span class="note">Ajusta la fecha de fallo y todo se recalcula</span></div>
+  <div class="ctrl">
+    <label for="fallo">Fecha de comunicación del fallo</label>
+    <input type="date" id="fallo" value="2026-09-15">
+    <span class="hint">Todas las fechas se derivan del fallo. Los días hábiles descuentan fines de semana y festivos oficiales.</span>
+  </div>
+  <div class="wins" id="wins"></div>
+  <div class="info"><b>Criterio de finiquito.</b> Cada frente cobra el saldo cuando entrega su parte, no cuando la Secretaría cierra el programa. Diseño finiquita al liberar los archivos finales para prensa. Video finiquita al entregar los 72 archivos con control de calidad aprobado. La imprenta finiquita al entregar el tiraje completo a Núcleo. El frente lingüístico y los posts de redes sociales se cubren íntegros por adelantado y no dejan saldo pendiente.</div>
+</section>
+
+<section>
+  <div class="shead"><span class="n">02</span><h2>Plan de trabajo completo</h2><span class="note">Pasa el cursor por una barra · haz click para la ficha</span></div>
+  <div class="gwrap">
+    <div class="glegend">
+      <span><i style="background:var(--f-nuc)"></i>Núcleo</span>
+      <span><i style="background:var(--f-tra)"></i>Frente lingüístico</span>
+      <span><i style="background:var(--f-mac)"></i>Macula &amp; Acuity</span>
+      <span><i style="background:var(--f-cru)"></i>Crusible</span>
+      <span><i style="background:var(--f-imp)"></i>Imprenta</span>
+      <span><i style="border:1.5px dashed var(--f-sem);background:#fff"></i>Secretaría</span>
+      <span class="tip">Click en cualquier barra para ver el detalle</span>
+    </div>
+    <div class="gscroll"><div class="gantt" id="gantt"></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="shead"><span class="n">03</span><h2>Detalle de pagos</h2></div>
+  <div class="scroll">
+    <table id="detTable"><thead><tr><th>Proveedor y concepto</th><th>Se paga cuando</th><th>Fecha</th><th class="num">Monto</th><th class="num">%</th></tr></thead><tbody></tbody></table>
+  </div>
+</section>
+
+<section>
+  <div class="shead"><span class="n">04</span><h2>Resumen por frente</h2></div>
+  <div class="scroll">
+    <table id="provTable"><thead><tr><th>Frente</th><th>Alcance</th><th class="num">Anticipo</th><th class="num">Finiquito</th><th class="num">Total</th></tr></thead><tbody></tbody></table>
+  </div>
+</section>
+
+<section>
+  <div class="shead"><span class="n">05</span><h2>Fechas que condicionan todo el programa</h2></div>
+  <div class="scroll">
+    <table id="msTable"><thead><tr><th>Hito</th><th>Origen</th><th>Fecha</th><th>Tipo</th></tr></thead><tbody></tbody></table>
+  </div>
+  <div class="alert" id="printAlert"></div>
+</section>
+
+<section>
+  <div class="shead"><span class="n">06</span><h2>Notas</h2></div>
+  <div class="notes">
+    <ol>
+      <li><b>La ventana de arranque concentra el riesgo de liquidez.</b> Se libera en los primeros días hábiles del fallo y financia la contratación simultánea del frente lingüístico, el crew de rodaje, el estudio de audio y los diseñadores. Sin ella no arranca ningún frente.</li>
+      <li><b>El frente lingüístico se paga al 100% por adelantado.</b> Cubre traductores, actores de voz, coordinadores culturales y validación en náhuatl, otomí, mazahua, tlahuica y matlatzinca. El matlatzinca ronda los mil hablantes y el tlahuica menos: son perfiles que exigen reserva con depósito y no se consiguen con una semana de aviso.</li>
+      <li><b>El anticipo de imprenta se libera antes de que exista el arte final.</b> Sirve para apartar la ventana de prensa. Una corrida de 300,100 piezas en seis versiones no se agenda con poca anticipación, menos en temporada de fin de año.</li>
+      <li><b>Macula &amp; Acuity y Crusible entregan y salen.</b> Su participación termina con los archivos finales. La distribución, la bitácora, la memoria fotográfica, los informes mensuales y las carpetas ejecutivas quedan a cargo de Núcleo: aparecen en el plan para que la vista sea completa, aunque no correspondan a estas cotizaciones.</li>
+      <li><b>Origen de las cifras.</b> Video, diseño y posts corresponden a las órdenes 5000-091 a 095 del 1 de septiembre de 2026. Traducción e impresión son los presupuestos acordados para esos frentes. Todos los importes incluyen IVA.</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <span>Campaña de difusión AVGF Estado de México · Plan de trabajo y calendario de pagos</span>
+  <span id="gen"></span>
+</footer>
+</div>
+
+<div id="tip" role="tooltip"></div>
+<div id="ov" role="dialog" aria-modal="true" aria-labelledby="mTitle"><div class="modal" id="modal"></div></div>
+
+<script>
+const FRENTES=[{"id": "tra", "empresa": "Crew de lenguas originarias", "nombre": "Traducción y locución", "color": "#6D28D9", "alcance": "Traductores, actores de voz, coordinadores de cultura y validación lingüística en náhuatl, otomí, mazahua, tlahuica y matlatzinca.", "detalle": "Presupuesto integrado del frente lingüístico", "total": 175000.0, "pct": 1.0, "antOff": {"k": "bd", "d": 3}, "antCuando": "Al arranque, antes de contratar perfiles", "antMotivo": "Perfiles escasos que exigen reserva con depósito", "salOff": null, "salCuando": null}, {"id": "mac", "empresa": "Macula & Acuity", "nombre": "Producción y postproducción de video", "color": "#0F766E", "alcance": "Rodaje de 3 jornadas, voz en off en 6 idiomas con dos salas simultáneas, postproducción y versionado de 6 reels a 6 lenguas y 2 formatos: 72 archivos.", "detalle": "Órdenes 5000-091, 5000-092 y 5000-093", "total": 221367.95, "pct": 0.7, "antOff": {"k": "bd", "d": 3}, "antCuando": "Al arranque, contra contrato", "antMotivo": "Crew, transporte, estudio de audio y editores", "salOff": {"k": "val", "d": 5}, "salCuando": "Al entregar los 72 videos con QC aprobado"}, {"id": "cru", "empresa": "Crusible", "nombre": "Diseño gráfico", "color": "#8A9410", "alcance": "Nueve propuestas de cartel, díptico y banner, 15 variaciones idiomáticas, preprensa y liberación de archivos para imprenta.", "detalle": "Orden 5000-094", "total": 39539.76, "pct": 0.7, "antOff": {"k": "bd", "d": 3}, "antCuando": "Al arranque, contra contrato", "antMotivo": "Contratación de diseñadores y arranque de propuestas", "salOff": {"k": "val", "d": 3}, "salCuando": "Al liberar los archivos finales para prensa"}, {"id": "m5", "empresa": "Crusible", "nombre": "Posts de redes sociales", "color": "#8A9410", "alcance": "15 posts adaptados a Facebook e Instagram, en cuadrado 1080 × 1080 y vertical 1080 × 1350, con archivo maestro a 300 dpi y editable.", "detalle": "Orden 5000-095", "total": 9191.59, "pct": 1.0, "antOff": {"k": "bd", "d": 3}, "antCuando": "Al arranque, contra contrato", "antMotivo": "Pago único por adelantado", "salOff": null, "salCuando": null}, {"id": "imp", "empresa": "Proveeduría de imprenta", "nombre": "Impresión", "color": "#B45309", "alcance": "50,000 carteles, 250,000 dípticos con doblado y 100 banners con estructura, en seis versiones idiomáticas.", "detalle": "Presupuesto de tiraje, acabados y entrega a Núcleo", "total": 975444.0, "pct": 0.5, "antOff": {"k": "bd", "d": 10}, "antCuando": "Para apartar la ventana de prensa", "antMotivo": "Se libera antes de que exista el arte final", "salOff": {"k": "val", "d": 19}, "salCuando": "Al entregar el tiraje completo a Núcleo"}];
+const PLAN=[{"p": "A · Arranque y contratación"}, {"id": "A1", "n": "Comunicación del fallo y firma de contrato", "f": "nuc", "k": "bd", "s": 0, "e": 1, "sum": "Arranca la vigencia y con ella todos los plazos del anexo.", "desc": "Notificación formal del fallo y firma del contrato con la Secretaría de las Mujeres. A partir de esta fecha corren los 15 días hábiles del inciso B y el resto del cronograma contractual.", "out": "Contrato firmado y fecha de arranque asentada", "dep": "—", "alert": "Todos los plazos del anexo se cuentan desde aquí, incluida la entrega de propuesta a 15 días hábiles."}, {"id": "A2", "n": "Junta de arranque: plazos, alcance y dictamen", "f": "nuc", "k": "bd", "s": 1, "e": 3, "sum": "La junta donde se cierran por escrito las ambigüedades del anexo.", "desc": "Reunión con la Dirección General para dejar en minuta cuatro puntos: que el entregable del día 15 es la propuesta y no los másters; cuál de los tres plazos posteriores a la validación aplica; quién gestiona el Dictamen Técnico y si suspende plazos; y que \"seis diferentes carteles\" significa una versión por lengua, no seis conceptos distintos.", "out": "Minuta firmada por ambas partes", "dep": "A1 · Firma de contrato", "note": "Bloqueante", "alert": "Cada punto que no quede en minuta se resuelve después a costo del consorcio, con la pena del 5% diario corriendo."}, {"id": "A3", "n": "Entrega de insumos de Fase 1 y manual gráfico", "f": "sem", "k": "bd", "s": 0, "e": 5, "sum": "La Secretaría entrega el diagnóstico y los mensajes prioritarios.", "desc": "Resultado de la Fase 1 con identificación del problema, análisis de contexto y mensajes prioritarios para los once municipios alertados, más los formatos administrativos de control y el Manual de Identidad Gráfica vigente.", "out": "Brief de Fase 1, formatos administrativos y manual gráfico", "dep": "A1 · Firma de contrato", "alert": "Los 15 días hábiles corren desde el fallo, no desde aquí. Cada día de retraso resta días de producción y debe quedar asentado en bitácora con acuse."}, {"id": "A4", "n": "Contratación de proveedores y liberación de anticipos", "f": "nuc", "k": "bd", "s": 0, "e": 3, "sum": "El pago 1 detona el arranque simultáneo de los cuatro frentes.", "desc": "Cierre de contratos con el frente lingüístico, Macula & Acuity, Crusible y la imprenta, con liberación de los anticipos correspondientes y confirmación de fechas comprometidas.", "out": "Contratos firmados y anticipos transferidos", "dep": "A1 · Firma de contrato"}, {"id": "A5", "n": "Convenio de reparto de alcance del consorcio", "f": "nuc", "k": "bd", "s": 1, "e": 6, "sum": "Define qué empresa responde por qué entregable ante la Secretaría.", "desc": "Convenio entre las empresas del consorcio con el reparto de alcance entregable por entregable y una cláusula de repercusión de penas al responsable del incumplimiento.", "out": "Convenio firmado con anexo de reparto", "dep": "A1 · Firma de contrato", "alert": "Para la Secretaría hay un solo prestador. La pena del 5% diario se calcula sobre el total del contrato y alcanza a todas las empresas por igual."}, {"p": "B · Frente lingüístico"}, {"id": "B1", "n": "Localización y contratación de traductores y locutores", "f": "tra", "k": "bd", "s": -8, "e": 5, "sum": "El cuello de botella real del programa.", "desc": "Búsqueda y contratación de traductores, validadores y locutores de náhuatl, otomí, mazahua, tlahuica y matlatzinca, con dos candidatos por lengua, vía INPI y la Secretaría de Pueblos Indígenas del Estado de México. Incluye contrato de reserva con depósito y compromiso de disponibilidad para la jornada de estudio.", "out": "5 traductores, 5 validadores y 5 locutores contratados", "dep": "Ninguna. Puede arrancar antes del fallo.", "note": "Empezar antes del fallo", "alert": "El matlatzinca ronda los mil hablantes y el tlahuica menos. Es el único paquete que puede empezar antes del fallo y el que más riesgo elimina por peso invertido."}, {"id": "B2", "n": "Traducción de guiones y copy a 5 lenguas", "f": "tra", "k": "bd", "s": 9, "e": 13, "sum": "30 guiones traducidos más el copy de las tres piezas impresas.", "desc": "Traducción de los seis guiones de reel y del contenido de cartel, díptico y banner a las cinco lenguas originarias, cuidando que el resultado sea locutable y quepa en la duración del corte base.", "out": "30 guiones traducidos y copy impreso en 6 idiomas", "dep": "A3, B1 y los guiones aprobados en español"}, {"id": "B3", "n": "Validación por hablantes nativos", "f": "tra", "k": "bd", "s": 13, "e": 15, "sum": "Segunda lectura por un hablante distinto al traductor.", "desc": "Revisión de todas las traducciones por hablantes nativos distintos de quien tradujo, verificando comprensión, pertinencia cultural y que los conceptos de prevención de la violencia se transmitan sin revictimizar.", "out": "Traducciones validadas con acta de conformidad", "dep": "B2 · Traducción terminada", "alert": "En tlahuica y matlatzinca puede no haber dos personas disponibles. Si coinciden traductor y validador, documentarlo y separar las dos lecturas en el tiempo."}, {"id": "B4", "n": "Corrección de estilo para material impreso", "f": "tra", "k": "bd", "s": 16, "e": 19, "sum": "Requisito explícito del anexo para carteles y dípticos.", "desc": "Corrección de estilo de los textos de cartel y díptico en los seis idiomas, exigida por el anexo junto con la prueba a color como condición del tiraje.", "out": "Textos con corrección de estilo firmada", "dep": "B3 · Validación por hablantes nativos", "alert": "Un error ortográfico detectado después del tiraje son 300,000 piezas inservibles."}, {"id": "B5", "n": "Validación en cabina durante la grabación de voz", "f": "tra", "k": "bd", "s": 19, "e": 20, "sum": "El traductor de cada lengua valida las tomas en tiempo real.", "desc": "Presencia del traductor de cada lengua en cabina durante la jornada de estudio, validando pronunciación y contenido toma por toma. Resuelve la revisión lingüística del audio el mismo día en lugar de dejarla como ciclo posterior.", "out": "30 audios validados en el momento", "dep": "B3 y la jornada de estudio agendada", "alert": "Sin validador en cabina el director no puede juzgar una toma fallida en lengua originaria: se descubre en edición, cuando ya no hay día de recuperación."}, {"p": "C · Producción audiovisual"}, {"id": "C1", "n": "Concepto de campaña y guiones de los 6 reels", "f": "mac", "k": "bd", "s": 2, "e": 9, "sum": "Un concepto que funcione igual en reel vertical y en cartel impreso.", "desc": "Concepto rector con tono y tratamiento visual, más guion literario y técnico de los seis reels con storyboard. Cada reel debe caber en el rango de 30 a 60 segundos y difundir las rutas de atención institucional: apoyo psicológico, jurídico y de protección.", "out": "Concepto aprobado y 6 guiones con storyboard", "dep": "A3 · Brief de Fase 1", "alert": "Escribir con holgura de duración: la traducción a lenguas originarias suele alargar el texto y el rango de 30 a 60 segundos es contractual."}, {"id": "C2", "n": "Preproducción: locaciones, casting y logística", "f": "mac", "k": "bd", "s": 3, "e": 13, "sum": "Todo lo que hace que las tres jornadas salgan sin improvisar.", "desc": "Scouting y permisos de locación en los municipios alertados, casting de talento en pantalla con cesión de derechos de imagen para uso institucional, contratación de crew, equipo y transporte, y call sheets por jornada.", "out": "Locaciones, talento, crew y call sheets confirmados", "dep": "C1 · Guiones aprobados"}, {"id": "C3", "n": "Rodaje, 3 jornadas", "f": "mac", "k": "bd", "s": 16, "e": 19, "sum": "Grabación in situ con dos cámaras y sonido profesional.", "desc": "Tres jornadas de grabación con dos cámaras, sonido de ambiente, tramoya y personal de filmación, agrupadas por locación para aprovechar los traslados. Incluye planos de recurso para cubrir diferencias de duración entre versiones idiomáticas.", "out": "Material bruto de los 6 reels, respaldado en HDD", "dep": "C2 · Preproducción cerrada", "alert": "No hay jornada de recuperación en presupuesto ni en calendario. Doble respaldo el mismo día, con verificación por checksum antes de formatear tarjetas."}, {"id": "C4", "n": "Voz en off: 5 lenguas, 2 salas simultáneas", "f": "mac", "k": "bd", "s": 19, "e": 20, "sum": "Una jornada, dos cabinas, 30 audios en lenguas originarias.", "desc": "Jornada de 9:00 a 19:00 con dos salas en paralelo y un director por sala. Sala 1: matlatzinca y tlahuica por la mañana, con reserva por la tarde. Sala 2: náhuatl, otomí y mazahua. El español se graba por separado en cabina chica.", "out": "30 audios en lenguas originarias, más 6 en español", "dep": "B3, B5 y locutores confirmados", "note": "Fecha única", "alert": "Fecha única e irrepetible. Si un locutor no llega, se detiene el versionado de 12 de los 72 videos y no hay jornada de reposición."}, {"id": "C5", "n": "Postproducción, colorización y mezcla", "f": "mac", "k": "bd", "s": 19, "e": 27, "sum": "Los 6 reels base en español, que son el molde de todo lo demás.", "desc": "Montaje de los seis reels en español, colorización creativa y corrección de color profesional, y mezcla de locución, sonido de ambiente y música con salida en AAC estéreo.", "out": "6 reels base terminados y aprobados internamente", "dep": "C3 y la locución en español"}, {"id": "C6", "n": "Versionado a 6 lenguas y 2 formatos: 72 archivos", "f": "mac", "k": "bd", "s": 27, "e": 33, "sum": "El volumen más grande del programa, en seis días hábiles.", "desc": "Sustitución de locución, reajuste de tiempos de escena por versión idiomática, rotulación y subtitulado por lengua, y reencuadre a cuadrado 1:1 y vertical 9:16 en 1080 píxeles.", "out": "72 archivos exportados", "dep": "C5 y los audios editados"}, {"id": "C7", "n": "Control de calidad y atención de observaciones", "f": "mac", "k": "bd", "s": 32, "e": 35, "sum": "Verificación uno por uno contra la especificación del anexo.", "desc": "Revisión de los 72 archivos contra la especificación —resolución 1080, contenedor MP4 o MOV, audio AAC estéreo, duración de 30 a 60 segundos, leyenda del programa y número de dictamen presentes— e incorporación de las observaciones de la Secretaría dentro de las 12 rondas de cambio incluidas.", "out": "72 archivos verificados y corregidos", "dep": "C6 y las observaciones recibidas"}, {"id": "C8", "n": "Entrega de los 72 videos", "f": "mac", "k": "val", "s": 3, "e": 5, "sum": "Cierra la participación de Macula & Acuity y detona su finiquito.", "desc": "Entrega de los 72 archivos en medio de almacenamiento extraíble y en nube, con estructura de carpetas por reel y por lengua, más el disco duro con el footage de las tres jornadas.", "out": "Entrega formal con acuse. Detona el pago 4.", "dep": "C7 · QC aprobado", "note": "Finiquito Macula"}, {"p": "D · Diseño gráfico"}, {"id": "D1", "n": "Propuestas de cartel, díptico y banner", "f": "cru", "k": "bd", "s": 7, "e": 12, "sum": "Nueve propuestas, tres por pieza, según el manual gráfico.", "desc": "Diseño gráfico y editorial de tres propuestas de cartel de 44 × 68 cm, tres de díptico de 13 × 20 cm y tres de Banner X de 80 × 180 cm, siguiendo el Manual de Identidad Gráfica de la dependencia y pensadas para impresión a cuatro tintas.", "out": "9 propuestas en PDF", "dep": "A3 · Brief y manual gráfico", "alert": "El anexo prohíbe cualquier logo o referencia del prestador y exige la leyenda del programa U012 más espacio reservado para el número de Dictamen Técnico."}, {"id": "D2", "n": "Diseño de los 15 posts de redes sociales", "f": "cru", "k": "bd", "s": 10, "e": 15, "sum": "Adaptaciones para Facebook e Instagram en dos formatos.", "desc": "15 posts en formato cuadrado de 1080 × 1080 px y vertical de 1080 × 1350 px, con archivo maestro a 300 dpi, versión de publicación a 72 dpi y archivo editable en Illustrator, Photoshop o InDesign.", "out": "15 posts en ambos formatos, más archivos editables", "dep": "C1 · Concepto de campaña aprobado"}, {"id": "D3", "n": "Selección y correcciones incluidas", "f": "cru", "k": "bd", "s": 12, "e": 14, "sum": "Aquí se congela el arte del que dependen las 15 variaciones.", "desc": "Presentación de propuestas, selección del diseño aprobado por pieza e incorporación de las dos correcciones incluidas por propuesta, seis cambios en total según las notas de la orden.", "out": "3 diseños aprobados y congelados", "dep": "D1 · Propuestas presentadas", "alert": "Cada día de indecisión aquí se multiplica por cinco lenguas y tres piezas. Una tercera ronda de correcciones es cambio de alcance y se cotiza aparte."}, {"id": "D4", "n": "15 variaciones idiomáticas de las 3 piezas", "f": "cru", "k": "bd", "s": 14, "e": 18, "sum": "En volumen, más de la mitad del trabajo de diseño.", "desc": "Adaptación del diseño aprobado de cada pieza a las cinco lenguas originarias, ajustando composición donde el texto traducido cambie de extensión. Son 15 archivos: tres piezas por cinco lenguas.", "out": "15 archivos de variación idiomática", "dep": "D3 y B2 · Copy traducido"}, {"id": "D5", "n": "Revisión de legibilidad con especialistas", "f": "cru", "k": "bd", "s": 18, "e": 20, "sum": "Que el texto traducido se lea bien ya maquetado.", "desc": "Revisión de cada variación con el especialista de la lengua correspondiente, verificando legibilidad, cortes de palabra y precisión del contenido textual dentro del diseño. Es distinto de la traducción: aquí se valida cómo queda el texto en la composición final.", "out": "15 variaciones validadas por especialista", "dep": "D4 · Variaciones terminadas"}, {"id": "D6", "n": "Preprensa e imposición", "f": "cru", "k": "bd", "s": 20, "e": 23, "sum": "De archivo de diseño a archivo de imprenta.", "desc": "Conversión a CMYK, perfiles de color, sangrados, marcas de corte e imposición según formato de pliego, para las 18 piezas impresas más los archivos de banner en gran formato.", "out": "18 archivos listos para prensa", "dep": "D5 · Variaciones validadas", "alert": "Un error de preprensa se descubre con las placas ya montadas. Es el punto de no retorno entre diseño y producción física."}, {"id": "D7", "n": "Ajustes por observaciones y liberación final", "f": "cru", "k": "val", "s": 0, "e": 3, "sum": "Cierra la participación de Crusible y detona su finiquito.", "desc": "Incorporación de las observaciones de la Secretaría sobre el arte y liberación definitiva de los archivos para la imprenta, junto con la entrega de los 15 posts.", "out": "Archivos finales liberados. Detona el pago 3.", "dep": "D6 y la validación de la Secretaría", "note": "Finiquito Crusible"}, {"p": "E · Revisión y validación"}, {"id": "E1", "n": "Entrega de la propuesta a la Secretaría", "f": "nuc", "k": "bd", "s": 14, "e": 15, "sum": "El hito contractual más apretado del programa.", "desc": "Entrega del paquete de propuesta: concepto de campaña, guiones, storyboards, artes finales de impresos, parrilla de contenidos y corte de aprobación audiovisual.", "out": "Propuesta entregada con acuse", "dep": "C1, D1, D3 y B2", "note": "Inciso B", "alert": "Leído literal, el anexo pide todo terminado y traducido en 15 días hábiles. Que el entregable sea la propuesta y no los másters debe estar en minuta desde la junta de arranque."}, {"id": "E2", "n": "Ventana de revisión de la Secretaría", "f": "sem", "k": "bd", "s": 15, "e": 35, "sum": "Hasta 20 días hábiles fuera del control del consorcio.", "desc": "Periodo en que la Dirección General revisa y en su caso valida el desarrollo y diseño de los materiales impresos y los activos digitales traducidos a las lenguas originarias.", "out": "Validación expresa de la Secretaría", "dep": "E1 · Propuesta entregada", "note": "Hasta 20 días hábiles", "alert": "Si la Secretaría agota los 20 días hábiles, la cadena queda sin holgura contra el 24 de noviembre. Conviene acordar revisiones parciales escalonadas en lugar de una sola revisión monolítica."}, {"id": "E3", "n": "Dictamen Técnico de Comunicación Social", "f": "sem", "k": "bd", "s": 15, "e": 30, "sum": "Trámite de tercero sin plazo definido en el anexo.", "desc": "Obtención del número de autorización del Dictamen Técnico emitido por la Coordinación General de Comunicación Social, requisito obligatorio de todos los materiales impresos y digitales.", "out": "Número de autorización del dictamen", "dep": "E1 · Arte presentado", "note": "Plazo indefinido", "alert": "Sin el número no se cierra rotulación ni preprensa, y no depende del consorcio. Dejar asentado que el tiempo de dictamen suspende el cómputo de plazos."}, {"p": "F · Impresión"}, {"id": "F1", "n": "Ficha técnica y cotización de tiraje", "f": "imp", "k": "bd", "s": 6, "e": 10, "sum": "Especificación completa de las 300,100 piezas.", "desc": "Ficha técnica por pieza con medidas, tintas, sustrato, acabado y desglose de tiraje por idioma, más la cotización y la ficha de tiempos reales de producción de la imprenta.", "out": "Ficha técnica, cotización y ficha de tiempos", "dep": "A3 · Manual gráfico recibido"}, {"id": "F2", "n": "Reserva de la ventana de prensa", "f": "imp", "k": "bd", "s": 10, "e": 12, "sum": "Se aparta capacidad de prensa antes de que exista el arte.", "desc": "Bloqueo del calendario de prensa alrededor de la fecha estimada de validación, no de la real, para las 300,100 piezas en seis versiones idiomáticas.", "out": "Ventana de prensa reservada por escrito", "dep": "F1 y el anticipo liberado", "note": "Antes del arte final", "alert": "Es una apuesta deliberada: se reserva sobre una fecha que aún no es firme. Negociar con la imprenta una penalización baja por reprogramación."}, {"id": "F3", "n": "Prueba a color y firma de aprobación", "f": "imp", "k": "val", "s": 1, "e": 4, "sum": "Requisito explícito del anexo. Nunca arrancar tiraje sin ella.", "desc": "Prueba a color certificada de cartel y díptico, contrastada contra el Manual de Identidad Gráfica y el dictamen de imagen institucional, presentada a la Secretaría para firma de conformidad.", "out": "Prueba a color firmada por la Secretaría", "dep": "D7 · Archivos liberados"}, {"id": "F4", "n": "Tiraje: 50,000 carteles y 100 banners", "f": "imp", "k": "val", "s": 4, "e": 11, "sum": "Seis versiones de cartel más lonas de gran formato.", "desc": "50,000 carteles de 44 × 68 cm a cuatro tintas en couché de 225 gramos, repartidos en 10,000 en español y 8,000 por cada lengua originaria, más 100 banners en lona vinílica de 13 onzas, 20 en español y 16 por lengua.", "out": "Carteles y lonas impresos", "dep": "F3 · Prueba a color aprobada"}, {"id": "F5", "n": "Tiraje y doblado: 250,000 dípticos", "f": "imp", "k": "val", "s": 4, "e": 16, "sum": "El paquete que define el calendario completo de impresión.", "desc": "250,000 dípticos de 13 × 20 cm a cuatro tintas en couché de 225 gramos —50,000 en español y 40,000 por cada lengua originaria— más corte y doblado de la totalidad.", "out": "250,000 dípticos impresos, cortados y doblados", "dep": "F3 · Prueba a color aprobada", "note": "Ruta crítica", "alert": "Termina alrededor de 16 días naturales después de la validación. El inciso D concede 10. Es la evidencia física de que ese plazo no es cumplible."}, {"id": "F6", "n": "Acabados y montaje de estructuras X", "f": "imp", "k": "val", "s": 11, "e": 17, "sum": "100 banners montados sobre su soporte, listos para instalar.", "desc": "Montaje de las 100 lonas sobre estructura de soporte tipo X. El anexo especifica el montaje, no solo la lona: entregar lonas sueltas es entrega incompleta.", "out": "100 X-banners montados", "dep": "F4 · Lonas impresas"}, {"id": "F7", "n": "Entrega del tiraje completo a Núcleo", "f": "imp", "k": "val", "s": 17, "e": 19, "sum": "Cierra la participación de la imprenta y detona su finiquito.", "desc": "Flete, maniobra y entrega de las 300,100 piezas a Núcleo, con acuse sellado de recepción y verificación de cantidades contra el desglose por idioma.", "out": "Entrega completa con acuse. Detona el pago 5.", "dep": "F5 y F6", "note": "Finiquito imprenta", "alert": "Confirmar acceso, elevador de carga y capacidad de almacenamiento antes de programar el flete. Puede requerir entrega escalonada en tarimas."}, {"p": "G · Distribución y cierre"}, {"id": "G1", "n": "Recepción y clasificación de materiales", "f": "nuc", "k": "val", "s": 19, "e": 21, "sum": "Núcleo recibe, cuenta y clasifica por municipio y lengua.", "desc": "Recepción del tiraje, verificación de cantidades contra el desglose por idioma y clasificación de los materiales para su distribución en los once municipios con Alerta de Violencia de Género.", "out": "Inventario verificado y clasificado", "dep": "F7 · Entrega de la imprenta"}, {"id": "G2", "n": "Distribución a dependencias y municipios", "f": "nuc", "k": "val", "s": 20, "e": 29, "sum": "Reparto físico a dependencias estatales y municipales.", "desc": "Distribución de carteles, dípticos y banners a dependencias gubernamentales y a los puntos de difusión de los once municipios alertados, dentro de los 10 días naturales posteriores a la entrega.", "out": "Materiales distribuidos con acuses", "dep": "G1 · Materiales clasificados"}, {"id": "G3", "n": "Difusión en campo en los 11 municipios", "f": "nuc", "k": "fix", "s": "2026-11-10", "e": "2026-11-24", "sum": "Fecha tope fija en el anexo: 24 de noviembre.", "desc": "Colocación y difusión de los materiales en espacios públicos de los once municipios con Alerta de Violencia de Género, conforme al inciso F del cronograma.", "out": "Difusión ejecutada con testigos documentales", "dep": "G2 · Materiales distribuidos", "note": "Cierra el 24 nov", "alert": "El 24 de noviembre es fecha fija. Todo el calendario hacia atrás, incluidas las fechas de pago, se calcula desde aquí."}, {"id": "G4", "n": "Bitácora, memoria fotográfica y testigos", "f": "nuc", "k": "fix", "s": "2026-11-05", "e": "2026-12-05", "sum": "La evidencia que sostiene el cumplimiento ante la Secretaría.", "desc": "Bitácora de entrega con fecha, servicio y validación del área usuaria, más memoria fotográfica organizada por fecha y municipio en el formato que proporcione la Dirección General.", "out": "Bitácora y memoria fotográfica organizadas", "dep": "G3 · Difusión en curso", "alert": "Es la única defensa documental frente a la pena del 5% diario y las deductivas del 0.1%. Sin acuse sellado, todo retraso se presume del prestador."}, {"id": "G5", "n": "Informes mensuales de avance", "f": "nuc", "k": "fix", "s": "2026-11-02", "e": "2026-12-07", "sum": "Primeros 5 días hábiles del mes vencido.", "desc": "Informes entregados físicamente en las oficinas de la Secretaría en Toluca, con evidencia fotográfica y el avance documental que solicite la Dirección General.", "out": "Informes mensuales con acuse de recibo", "dep": "G4 · Bitácora al corriente", "alert": "Es requisito de forma y condición de pago. Un informe tarde es incumplimiento contractual con la misma penalización que un entregable tarde."}, {"id": "G6", "n": "Reporte final y carpetas ejecutivas", "f": "nuc", "k": "fix", "s": "2026-12-07", "e": "2026-12-15", "sum": "Cifras de cobertura, población alcanzada y distribución.", "desc": "Reporte con número de materiales diseñados y traducidos, cobertura territorial alcanzada, población mazahua, otomí, náhuatl, tlahuica y matlatzinca alcanzada, tasa de interacción de contenidos digitales y porcentaje de material distribuido. Más dos carpetas ejecutivas físicas a color y digitales en medio extraíble.", "out": "Reporte final y 2 carpetas ejecutivas", "dep": "G4 · Evidencia recopilada", "alert": "El anexo especifica tipografía Gotham Book 9 puntos justificado y Gotham Bold 11 puntos para títulos. Verificar la licencia antes de armar las carpetas."}, {"id": "G7", "n": "Entrega final a la Secretaría", "f": "nuc", "k": "fix", "s": "2026-12-14", "e": "2026-12-15", "sum": "Fecha fija: 15 de diciembre. Cierra el programa.", "desc": "Entrega de las carpetas ejecutivas, una a la Dirección General y otra a la Coordinación Administrativa, con acuse de recibo en ambas oficinas.", "out": "Entrega final con acuse en ambas oficinas", "dep": "G6 · Carpetas terminadas", "note": "Inciso G"}];
+const FC={nuc:'var(--f-nuc)',tra:'var(--f-tra)',mac:'var(--f-mac)',cru:'var(--f-cru)',imp:'var(--f-imp)',sem:'var(--f-sem)'};
+const FN={nuc:'Núcleo',tra:'Lingüístico',mac:'Macula',cru:'Crusible',imp:'Imprenta',sem:'Secretaría'};
+const FL={nuc:'Núcleo · coordinación general',tra:'Crew de lenguas originarias',mac:'Macula & Acuity',cru:'Crusible',imp:'Proveeduría de imprenta',sem:'Secretaría de las Mujeres'};
+
+const HOL=new Set(['2026-09-16','2026-11-16','2026-12-25','2027-01-01']);
+const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const MESL=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+const DIAS=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+const D=s=>{const[y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)};
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const isBiz=d=>d.getDay()!==0&&d.getDay()!==6&&!HOL.has(iso(d));
+function addBiz(d,n){const x=new Date(d);let c=0;while(c<n){x.setDate(x.getDate()+1);if(isBiz(x))c++}return x}
+function subBiz(d,n){const x=new Date(d);let c=0;while(c<n){x.setDate(x.getDate()-1);if(isBiz(x))c++}return x}
+function addCal(d,n){const x=new Date(d);x.setDate(x.getDate()+n);return x}
+const days=(a,b)=>Math.round((b-a)/86400000);
+function bizBetween(a,b){let c=0;const x=new Date(a);while(x<b){x.setDate(x.getDate()+1);if(isBiz(x))c++}return c}
+const fmt=d=>d.getDate()+' '+MES[d.getMonth()];
+const fmtL=d=>d.getDate()+' de '+MESL[d.getMonth()]+' de '+d.getFullYear();
+const fmtD=d=>DIAS[d.getDay()]+' '+d.getDate()+' de '+MESL[d.getMonth()];
+const mx=n=>'$'+n.toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2});
+const mk=n=>'$'+Math.round(n).toLocaleString('es-MX');
+
+const DIFUSION=D('2026-11-24'), CIERRE=D('2026-12-15');
+const FALLO_LIM=subBiz(subBiz(addCal(DIFUSION,-20),20),15);
+const TOT=FRENTES.reduce((s,f)=>s+f.total,0);
+const ANT=FRENTES.reduce((s,f)=>s+f.total*f.pct,0);
+const SAL=TOT-ANT;
+
+function fechaDe(o,A){if(!o)return null;if(o.k==='bd')return o.d<0?subBiz(A.F,-o.d):addBiz(A.F,o.d);if(o.k==='val')return addCal(A.VAL,o.d);return null}
+function rango(t,A){
+ if(t.k==='fix')return[D(t.s),D(t.e)];
+ if(t.k==='val')return[addCal(A.VAL,t.s),addCal(A.VAL,t.e)];
+ const g=n=>n<0?subBiz(A.F,-n):addBiz(A.F,n);
+ return[g(t.s),g(t.e)];
+}
+const tip=document.getElementById('tip'), ov=document.getElementById('ov'), modal=document.getElementById('modal');
+function showTip(e,t,a,b){
+ let h='<div class="tt">'+t.id+' · '+t.n+'</div>';
+ h+='<div class="tr"><span>Periodo</span><span>'+fmt(a)+' – '+fmt(b)+'</span></div>';
+ h+='<div class="tr"><span>Duración</span><span>'+days(a,b)+' naturales · '+bizBetween(a,b)+' hábiles</span></div>';
+ h+='<div class="tr"><span>Responsable</span><span>'+FL[t.f]+'</span></div>';
+ if(t.out) h+='<div class="tr"><span>Entregable</span><span style="font-weight:500">'+t.out+'</span></div>';
+ if(t.sum) h+='<div class="tsum">'+t.sum+'</div>';
+ if(t.alert) h+='<div class="tflag">Atención: '+t.alert.split('.')[0]+'.</div>';
+ h+='<div class="tcta">Click para la ficha completa</div>';
+ tip.innerHTML=h; tip.classList.add('on'); moveTip(e);
+}
+function moveTip(e){const r=tip.getBoundingClientRect();let x=e.clientX+16,y=e.clientY+16;
+ if(x+r.width>innerWidth-12)x=e.clientX-r.width-16;
+ if(y+r.height>innerHeight-12)y=Math.max(12,e.clientY-r.height-16);
+ tip.style.left=x+'px';tip.style.top=y+'px'}
+const hideTip=()=>tip.classList.remove('on');
+function openModal(t,a,b){
+ hideTip();
+ let tags='<span class="pill" style="background:'+FC[t.f]+';color:#fff">'+FL[t.f]+'</span>';
+ if(t.note) tags+='<span class="pill hard">'+t.note+'</span>';
+ let h='<button class="mclose" id="mx" aria-label="Cerrar">×</button>';
+ h+='<div class="mhead"><div class="eyebrow">Actividad '+t.id+'</div><h3 id="mTitle">'+t.n+'</h3><div class="mtags">'+tags+'</div></div><div class="mbody">';
+ h+='<div class="mgrid">';
+ h+='<div class="mcell"><span>Inicio</span><b>'+fmtD(a)+'</b></div>';
+ h+='<div class="mcell"><span>Fin</span><b>'+fmtD(b)+'</b></div>';
+ h+='<div class="mcell"><span>Días naturales</span><b>'+days(a,b)+'</b></div>';
+ h+='<div class="mcell"><span>Días hábiles</span><b>'+bizBetween(a,b)+'</b></div>';
+ h+='</div>';
+ if(t.alert) h+='<div class="alert"><b>Atención.</b> '+t.alert+'</div>';
+ if(t.desc) h+='<div class="mblock"><h4>Qué incluye</h4><p>'+t.desc+'</p></div>';
+ h+='<div class="mblock"><h4>Entregable y dependencias</h4><ul class="mlist">';
+ h+='<li><b>Produce:</b> '+(t.out||'—')+'</li><li><b>Depende de:</b> '+(t.dep||'—')+'</li>';
+ h+='<li><b>Responsable:</b> '+FL[t.f]+'</li></ul></div>';
+ h+='</div>';
+ modal.innerHTML=h; ov.classList.add('on'); document.body.classList.add('locked');
+ const x=document.getElementById('mx'); x.focus(); x.onclick=closeModal;
+}
+function closeModal(){ov.classList.remove('on');document.body.classList.remove('locked')}
+ov.addEventListener('click',e=>{if(e.target===ov)closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();hideTip()}});
+
+function render(){
+ const F=D(document.getElementById('fallo').value);
+ const PROP=addBiz(F,15), VAL=addBiz(PROP,20), ENT=addCal(VAL,10);
+ const A={F,PROP,VAL,ENT};
+
+ let pagos=[];
+ FRENTES.forEach(f=>{
+  const a=f.total*f.pct;
+  if(a>0.005) pagos.push({f,tipo:f.pct<1?'Anticipo '+Math.round(f.pct*100)+'%':'Pago único 100%',monto:a,fecha:fechaDe(f.antOff,A),cuando:f.antCuando,motivo:f.antMotivo});
+  const s=f.total-a;
+  if(s>0.005) pagos.push({f,tipo:'Finiquito '+Math.round((1-f.pct)*100)+'%',monto:s,fecha:fechaDe(f.salOff,A),cuando:f.salCuando,motivo:''});
+ });
+ pagos.sort((a,b)=>a.fecha-b.fecha);
+ const map=new Map();
+ pagos.forEach(p=>{const k=iso(p.fecha);if(!map.has(k))map.set(k,{fecha:p.fecha,items:[],monto:0});const g=map.get(k);g.items.push(p);g.monto+=p.monto});
+ const W=[...map.values()].sort((a,b)=>a.fecha-b.fecha);
+
+ document.getElementById('fTotal').textContent=mk(TOT);
+ document.getElementById('fAnt').textContent=mk(ANT);
+ document.getElementById('fSal').textContent=mk(SAL);
+ document.getElementById('fVent').textContent=W.length;
+ document.getElementById('fTasks').textContent=PLAN.filter(t=>!t.p).length;
+
+ const w1=W[0];
+ document.getElementById('heroBig').textContent='Hay que tener '+mk(w1.monto)+' disponibles en la primera semana.';
+ document.getElementById('heroText').textContent='Con fallo el '+fmtL(F)+', el primer pago vence el '+fmtL(w1.fecha)+' y representa el '+Math.round(w1.monto/TOT*100)+'% del programa. Financia el arranque simultáneo de los frentes: sin él no se contrata al crew de lenguas originarias, no se reserva estudio ni transporte, y no arranca diseño. El programa completo asciende a '+mx(TOT)+', repartido en '+W.length+' pagos.';
+ document.getElementById('heroText2').textContent='De ese total, '+mx(ANT)+' se liberan como anticipos al arranque y '+mx(SAL)+' como finiquitos, cada uno en la fecha en que el frente correspondiente termina su participación.';
+
+ const WC=['var(--f-tra)','var(--f-imp)','var(--f-cru)','var(--f-mac)','var(--f-nuc)'];
+ document.getElementById('wins').innerHTML=W.map((w,i)=>{
+  const l=w.items.map(p=>p.f.empresa+' · '+p.tipo).join(' · ');
+  return '<div class="win"><div class="top" style="background:'+WC[i%5]+'"></div><div class="lbl">PAGO '+(i+1)+'</div>'+
+   '<div class="amt">'+mk(w.monto)+'</div><div class="cur">MXN, IVA incluido</div>'+
+   '<div class="when">'+fmtL(w.fecha)+'</div><div class="why">'+l+'</div></div>';
+ }).join('');
+
+ let min=subBiz(F,10),max=D('2026-12-20');
+ PLAN.forEach(t=>{if(t.p)return;const[a,b]=rango(t,A);if(a<min)min=a;if(b>max)max=b});
+ min=addCal(min,-2);max=addCal(max,3);
+ const Wd=days(min,max)*11, x=d=>days(min,d)*11;
+
+ let h='<div class="grow axisrow gaxis"><div class="glabel">Actividad</div><div class="gtrack" style="width:'+Wd+'px" id="ax"></div></div>';
+ PLAN.forEach((t,i)=>{
+  if(t.p){h+='<div class="grow phase"><div class="glabel">'+t.p+'</div><div class="gtrack" style="width:'+Wd+'px"></div></div>';return}
+  const[a,b]=rango(t,A), col=FC[t.f], dash=t.f==='sem'?' dash':'';
+  const lab=t.note?'<span class="lbl">'+t.note+'</span>':'';
+  h+='<div class="grow"><div class="glabel"><span class="code">'+t.id+'</span><span>'+t.n+'</span><span class="who" style="background:'+col+'">'+FN[t.f]+'</span></div>'+
+     '<div class="gtrack" style="width:'+Wd+'px"><button class="bar'+dash+'" data-i="'+i+'" aria-label="'+t.n+'" style="left:'+x(a)+'px;width:'+Math.max(days(a,b)*11,9)+'px;background:'+col+'">'+lab+'</button></div></div>';
+ });
+ let plane='';
+ [[PROP,'Propuesta'],[DIFUSION,'24 nov · fin difusión'],[CIERRE,'15 dic · cierre']].forEach(([d,l])=>{
+  plane+='<div class="vhard" style="left:'+x(d)+'px"><span class="vflag" style="color:var(--red);top:2px">'+l+'</span></div>'});
+ W.forEach((w,i)=>{plane+='<div class="vpay" style="left:'+x(w.fecha)+'px"><span class="vflag" style="color:var(--violet);top:16px">Pago '+(i+1)+'</span></div>'});
+ const g=document.getElementById('gantt');
+ g.innerHTML=h+'<div class="gplane" style="width:'+Wd+'px">'+plane+'</div>';
+
+ let months='',cur=new Date(min.getFullYear(),min.getMonth(),1);
+ while(cur<=max){if(cur>=min)months+='<div class="gmonth" style="left:'+x(cur)+'px">'+MESL[cur.getMonth()]+'</div>';cur=new Date(cur.getFullYear(),cur.getMonth()+1,1)}
+ document.getElementById('ax').innerHTML=months;
+
+ g.querySelectorAll('.bar').forEach(el=>{
+  const t=PLAN[+el.dataset.i],[a,b]=rango(t,A);
+  el.addEventListener('mouseenter',e=>{showTip(e,t,a,b);el.closest('.grow').classList.add('hot')});
+  el.addEventListener('mousemove',moveTip);
+  el.addEventListener('mouseleave',()=>{hideTip();el.closest('.grow').classList.remove('hot')});
+  el.addEventListener('focus',()=>{const r=el.getBoundingClientRect();showTip({clientX:r.left,clientY:r.bottom},t,a,b)});
+  el.addEventListener('blur',hideTip);
+  el.addEventListener('click',()=>openModal(t,a,b));
+ });
+
+ document.querySelector('#detTable tbody').innerHTML=pagos.map(p=>
+  '<tr><td><span class="dot" style="background:'+p.f.color+'"></span><b>'+p.f.empresa+'</b> · '+p.tipo+
+  '<br><span style="color:var(--grey);font-size:12.5px">'+p.f.nombre+(p.motivo?' · '+p.motivo:'')+'</span></td>'+
+  '<td style="color:var(--grey)">'+(p.cuando||'—')+'</td><td class="d">'+fmtL(p.fecha)+'</td>'+
+  '<td class="num">'+mx(p.monto)+'</td><td class="num">'+(p.monto/TOT*100).toFixed(1)+'%</td></tr>').join('')+
+  '<tr class="tot"><td>Total del programa</td><td></td><td></td><td class="num">'+mx(TOT)+'</td><td class="num">100%</td></tr>';
+
+ document.querySelector('#provTable tbody').innerHTML=FRENTES.map(f=>{
+  const a=f.total*f.pct,s=f.total-a;
+  return '<tr><td><span class="dot" style="background:'+f.color+'"></span><b>'+f.empresa+'</b><br>'+
+   '<span style="color:var(--grey);font-size:13px">'+f.nombre+'</span><br><span style="color:var(--grey);font-size:12px">'+f.detalle+'</span></td>'+
+   '<td style="font-size:13.5px;color:#33332C">'+f.alcance+'</td>'+
+   '<td class="num">'+(a>0.005?mx(a)+'<br><span class="pill">'+Math.round(f.pct*100)+'%</span>':'—')+'</td>'+
+   '<td class="num">'+(s>0.005?mx(s):'—')+'</td><td class="num">'+mx(f.total)+'</td></tr>';
+ }).join('')+'<tr class="tot"><td>Total</td><td></td><td class="num">'+mx(ANT)+'</td><td class="num">'+mx(SAL)+'</td><td class="num">'+mx(TOT)+'</td></tr>';
+
+ document.querySelector('#msTable tbody').innerHTML=[
+  ['Comunicación del fallo','Inicio de vigencia',F,''],
+  ['Entrega de la propuesta','Inciso B · 15 días hábiles del fallo',PROP,'hard'],
+  ['Límite de validación de la Secretaría','Inciso C · hasta 20 días hábiles',VAL,''],
+  ['Entrega total de materiales','Inciso D · 10 días naturales de la validación',ENT,'hard'],
+  ['Fin de la distribución en campo','Inciso F · fecha fija',DIFUSION,'hard'],
+  ['Entregables finales a la Secretaría','Inciso G · fecha fija',CIERRE,'hard']
+ ].map(([n,o,d,t])=>'<tr><td><b>'+n+'</b></td><td style="color:var(--grey)">'+o+'</td><td class="d">'+fmtL(d)+'</td>'+
+  '<td><span class="pill '+(t||'')+'">'+(t==='hard'?'límite contractual':'referencia')+'</span></td></tr>').join('');
+
+ document.getElementById('printAlert').innerHTML='<b>Advertencia sobre el plazo de impresión.</b> El tiraje de 300,100 piezas, el doblado de los dípticos y la entrega requieren alrededor de 19 días naturales desde la validación: con estas fechas terminarían el '+fmtL(addCal(VAL,19))+', mientras que el inciso D del anexo concede 10 días naturales y el apartado de material impreso menciona 20. Conviene resolver esa contradicción por escrito con la Secretaría antes de firmar, porque condiciona el calendario de todos los frentes y la fecha del último pago. Además, el fallo debe comunicarse a más tardar el '+fmtL(FALLO_LIM)+' para que la cadena de plazos cierre contra el 24 de noviembre.';
+ document.getElementById('gen').textContent='Fecha de fallo considerada: '+fmtL(F);
+}
+document.getElementById('fallo').addEventListener('change',render);
+render();
+</script>
+</body>
+</html>
